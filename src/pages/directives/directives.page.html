@@ -1,0 +1,13 @@
+<ion-header>
+  <top-nav [compOptions]="{'calledFrom': 'directives'}"></top-nav>
+</ion-header>
+
+<ion-content padding>
+
+  <ul>
+    <li appHighlight>Highlight me!</li>
+    <li [appHighlight]="'green'">Highlight me in green!</li>
+    <li [appHighlight]="'blue'">Highlight me in blue!</li>
+  </ul>
+
+</ion-content>

@@ -1,0 +1,17 @@
+<ion-header>
+  <top-nav [compOptions]="{'calledFrom': 'Transitions'}"></top-nav>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-button color="danger" round icon-start [routerLink]="'/home'">
+    <ion-icon name="ios-close-circle" class="margin-right-10"></ion-icon>
+    Go to Home Page without transitions
+  </ion-button>
+  <br>
+  <ion-button color="success" round icon-start (click)="segueToHome()">
+    <ion-icon name="ios-checkmark-circle" class="margin-right-10"></ion-icon>
+    Go to Home Page with transition
+  </ion-button>
+
+</ion-content>

@@ -9,11 +9,46 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  public appPages = [
+  appPages = [
     {
       title: 'Home',
       url: '/home',
       icon: 'home'
+    },
+    {
+      title: 'Ionic components',
+      url: '/ionic4',
+      icon: 'logo-angular'
+    },
+    {
+      title: 'Bootstrap CSS',
+      url: '/bootstrap',
+      icon: 'md-square'
+    },
+    {
+      title: 'Pipes',
+      url: '/pipes',
+      icon: 'ios-funnel'
+    },
+    {
+      title: 'Directives',
+      url: '/directives',
+      icon: 'alert'
+    },
+    {
+      title: 'Routes / Params',
+      url: '/routesparams/series/entrainement/12345',
+      icon: 'git-network'
+    },
+    {
+      title: 'Transitions / Segues',
+      url: '/transitions',
+      icon: 'md-albums'
+    },
+    {
+      title: 'Unit Test',
+      url: '/unit-test',
+      icon: 'md-checkbox-outline'
     },
     {
       title: 'List',

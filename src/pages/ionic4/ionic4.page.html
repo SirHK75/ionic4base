@@ -1,0 +1,35 @@
+<ion-header>
+  <top-nav [compOptions]="{'calledFrom': 'ionci 4'}"></top-nav>
+</ion-header>
+
+<ion-content padding>
+  
+  <div class="bloc-example" data-example-type="Sources">
+    <b>Ionic_3 : </b><a href="https://ionicframework.com/docs/" target="_blank">https://ionicframework.com/docs/</a>          
+    <br>
+    <b>Ionic_4 : </b><a href="https://beta.ionicframework.com/docs/" target="_blank">https://beta.ionicframework.com/docs/</a>          
+  </div>
+
+  <div class="bloc-example" data-example-type="Alerts">
+    <ion-button size="small" round (click)="presentAlert()">presentAlert</ion-button>
+    <ion-button size="small" round (click)="presentAlert()">presentAlert</ion-button>
+    <ion-button size="small" round (click)="presentAlertMultipleButtons()">presentAlertMultipleButtons</ion-button>
+    <ion-button size="small" round (click)="presentAlertConfirm()">presentAlertConfirm</ion-button>
+    <ion-button size="small" round (click)="presentAlertPrompt()">presentAlertPrompt</ion-button>
+    <ion-button size="small" round (click)="presentAlertRadio()">presentAlertRadio</ion-button>
+    <ion-button size="small" round (click)="presentAlertCheckbox()">presentAlertCheckbox</ion-button>
+  </div>
+  
+  <div class="bloc-example" data-example-type="Badges">
+    <ion-badge color="primary">11</ion-badge>
+    <ion-badge color="secondary">22</ion-badge>
+    <ion-badge color="tertiary">33</ion-badge>
+    <ion-badge color="success">44</ion-badge>
+    <ion-badge color="warning">55</ion-badge>
+    <ion-badge color="danger">66</ion-badge>
+    <ion-badge color="light">77</ion-badge>
+    <ion-badge color="medium">88</ion-badge>
+    <ion-badge color="dark">99</ion-badge>
+  </div>
+
+</ion-content>

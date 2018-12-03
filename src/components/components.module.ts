@@ -4,20 +4,23 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
-import { ListPage } from './list.page';
+import { TopNavComponent } from './top-nav/top-nav.component';
 
 @NgModule({
+  declarations: [
+    TopNavComponent,
+  ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: ListPage
-      }
-    ])
+    RouterModule
   ],
-  declarations: [ListPage]
+  exports: [
+    TopNavComponent,
+  ],
+  entryComponents: [
+    TopNavComponent,
+  ]
 })
-export class ListPageModule {}
+export class ComponentsModule {}

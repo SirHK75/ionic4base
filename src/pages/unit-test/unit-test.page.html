@@ -1,0 +1,18 @@
+<ion-header>
+  <top-nav [compOptions]="{'calledFrom': 'unit test'}"></top-nav>
+</ion-header>
+
+<ion-content padding>
+  
+  <div class="alert alert-success margin-20">
+    {{unitTests.length}} components tested, 0 failures
+  </div>
+
+  <ul *ngFor="let ut of unitTests">
+    <li><b>{{ut.component}}</b></li>
+      <ul *ngFor="let test of ut.tests">
+        <li>{{test}}</li>
+      </ul>
+  </ul>
+  
+</ion-content>

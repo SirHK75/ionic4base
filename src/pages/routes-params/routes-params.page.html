@@ -1,0 +1,25 @@
+<ion-header>
+  <top-nav [compOptions]="{'calledFrom': 'routes params'}"></top-nav>
+</ion-header>
+
+<ion-content padding>
+
+  <div class="bloc-example" data-example-type="Routes Params">
+    <p>
+      <b>Route:</b> {{route}}<br>
+      <b>Theme:</b> {{theme}}<br>
+      <b>Subtheme:</b> {{subtheme}}<br>
+      <b>Id:</b> {{id}}
+    </p>
+    
+    <b>RandomUrl : </b><button type="button" [routerLink]="randomUrl" class="btn btn-link">{{randomUrl}}</button>
+    <br>    
+    <b>BaseUrl : </b><button type="button" [routerLink]="'/routesparams'" class="btn btn-link">/routesparams</button>
+    
+    <div class="alert alert-danger margin-top-10" role="alert">
+      Routes params are NOT optional! Create severals routes to skip params.
+    </div>
+
+  </div>
+
+</ion-content>

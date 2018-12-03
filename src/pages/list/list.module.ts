@@ -4,20 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
-import { HomePage } from './home.page';
+import { ListPage } from './list.page';
+
+// pure presentation components
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentsModule,
     RouterModule.forChild([
       {
         path: '',
-        component: HomePage
+        component: ListPage
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [ListPage]
 })
-export class HomePageModule {}
+export class ListPageModule {}
